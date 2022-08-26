@@ -30,6 +30,7 @@ body{
 
 .botaoPrincipal:hover{
   background-color: rgba(236,214 , 196,0.53);
+  cursor: pointer;
 }
 
 /* Cabeçalho */
@@ -82,6 +83,7 @@ body{
   font-weight: 400;
   font-size: 24px;
   color: #ECD6C4;
+  width: 300px;
 }
 .botaoPrincipal{
   background-color: #ECD6C4;
@@ -124,4 +126,37 @@ body{
 .rodapeImg{
   display: block;
   margin: 0 auto;
+}
+
+@media only screen and (max-width:750px) {
+  .principalImg{
+    display: none;
+  }
+ 
+  .botaoPrincipal{
+    width: 70vw;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+}
+
+@media only screen and (max-width:600px){
+  .logo{
+  display: none;
+}
+  .cabeçalhoMenu{
+    flex-direction: column;
+    text-align: center;
+    /* gap: 2px; */
+  }
+  .cabeçalhoMenuItens:hover{
+    background-color: #2F2325;
+  }
+  .cabeçalhoMenuItens{
+    border: 0.4px solid #ECD6C4;
+    padding: 15px;
+    width: 60vw;
+  }
 }
